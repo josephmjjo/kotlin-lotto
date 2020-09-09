@@ -13,7 +13,6 @@ class LottoTest {
         Assertions.assertThrows(
             IllegalArgumentException::class.java
         ) { Lotto(setOf(1, 2, 3, 4, 5, 6, 7)) }
-
     }
 
     @Test
@@ -24,6 +23,5 @@ class LottoTest {
                 7
             )
         ).isEqualTo(Rank.FIVE_BONUS_MATCH)
-
     }
 }

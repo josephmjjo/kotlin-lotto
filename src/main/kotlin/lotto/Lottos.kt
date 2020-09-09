@@ -22,7 +22,6 @@ class Lottos() {
 
     fun getLottoResultsWithBonus(winNumber: List<Int>, bonusNumber: Int): List<Rank> {
         return this.purchasedLotto.map { it.getPrizeWithBonus(winNumber, bonusNumber) }
-
     }
 
     companion object {

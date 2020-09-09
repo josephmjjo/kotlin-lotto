@@ -1,5 +1,6 @@
 package lotto
 
+
 class Lotto(private val numbers: Set<Int>) {
 
     val lottoNumber get() = numbers
@@ -8,7 +9,9 @@ class Lotto(private val numbers: Set<Int>) {
         require(numbers.size == 6) {
             "로또 숫자는 6개 입니다."
         }
+
     }
+
 
     fun getPrizeWithBonus(winningNumber: List<Int>, bonusNumber: Int): Rank {
         val counts = this.numbers.count { number -> winningNumber.contains(number) }
